@@ -4,3 +4,25 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+const remote = require('electron').remote;
+
+document.getElementById("btn-min").addEventListener("click", function (e) {
+  var window = remote.getCurrentWindow();
+  window.minimize();
+});
+
+document.getElementById("btn-max").addEventListener("click", function (e) {
+  var window = remote.getCurrentWindow();
+  if (!window.isMaximized()) {
+    window.maximize();
+  } else {
+    window.unmaximize();
+  }
+});
+
+document.getElementById("btn-close").addEventListener("click", function (e) {
+  var window = remote.getCurrentWindow();
+  console.log("Hello")
+  window.close();
+});

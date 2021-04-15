@@ -1,0 +1,33 @@
+.scroll-bar-hash::-webkit-scrollbar-track
+{
+  border-radius: 8px;
+  background-color: rgb(31, 41, 55);
+}
+
+.scroll-bar-hash::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: rgb(31, 41, 55);
+}
+
+.scroll-bar-hash::-webkit-scrollbar-thumb
+{
+  border-radius: 4px;
+  background-color:rgb(21, 28, 46)
+}
+
+.bg-gray-850{
+  background-color: rgb(26, 36, 48)
+}
+.ring-gray-850{
+  background-color: rgb(26, 36, 48)
+}
+
+a:not([draggable=true]), img:not([draggable=true]) {
+  -webkit-user-drag: none;
+}
+a[href^="http://"],
+a[href^="https://"],
+a[href^="ftp://"] {
+  -webkit-user-drag: auto;
+}
