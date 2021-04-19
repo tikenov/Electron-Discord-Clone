@@ -5,6 +5,9 @@
 // selectively enable features needed in the rendering
 // process.
 
+const chat = document.getElementById("chat_window");
+chat.scrollTop = chat.scrollHeight;
+
 const remote = require('electron').remote;
 
 document.getElementById("btn-min").addEventListener("click", function (e) {
